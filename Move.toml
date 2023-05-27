@@ -1,0 +1,38 @@
+[package]
+name = "mover_bridge"
+version = "0.0.0"
+
+[addresses]
+mover = "0xDEPLOYMENT_ADDRESS"
+
+bridge_user="0x567"
+lp = "0xbeef"
+relayer = "0x4"
+coin_admin="0x5"
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+
+[dependencies.lp]
+local = "lp"
+
+#[dependencies.lz]
+#local = "lz"
+
+#[dependencies.testcoin]
+#local = "testcoin"
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'

@@ -1,0 +1,28 @@
+[package]
+name = "lp"
+version = "0.0.1"
+
+[addresses]
+mover = "0xDEPLOYMENT_ADDRESS"
+lp_provider = "0xcafe"
+relayer = "0x4"
+user = "0xcafe"
+coin_admin="0x5"
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'
+
+[dependencies.AptosStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-stdlib'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
